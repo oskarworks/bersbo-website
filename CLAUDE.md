@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Bersbo Industries LLC holding page at bersbo.com. Single-page, static site — no frameworks, no build step.
+Bersbo Labs LLC holding page at bersbo.com, served by GitHub Pages (`CNAME`). Single-page static site: no frameworks, no build step.
 
 ## Development
 
@@ -14,23 +14,24 @@ Open `index.html` directly in a browser, or serve locally:
 python3 -m http.server 8000
 ```
 
-No build, lint, or test commands — this is plain HTML/CSS/JS.
+No build, lint, or test commands. Plain HTML/CSS/JS.
 
 ## Architecture
 
-- `index.html` — single page, loads Google Fonts (Libre Baskerville + Inter), links `styles.css` and `main.js`
-- `styles.css` — all styling; uses CSS `clamp()` for responsive typography, CSS animation for hero fade-in, inline SVG noise overlay via `body::after`
-- `main.js` — sets the current year in the footer copyright
+- `index.html`: the page. Loads Google Fonts (Bodoni Moda 700, IBM Plex Mono 400), `styles.css`, `main.js`
+- `styles.css`: all styling and design tokens as CSS variables; terrain, scan line and fade-in animations; reduced-motion fallback
+- `main.js`: sets the footer year and builds the dot terrain (54x22 desktop, 34x16 mobile)
 
-## Design Tokens
+## Brand (v2, "Ink")
 
-- Background: `#F4F2EE` (stone/off-white)
-- Primary text: `#0F0F0F` (near-black)
-- Secondary text (footer): `#2B2B2B` (iron grey)
-- Hero font: Libre Baskerville 700, all caps, `letter-spacing: 0.06em`
-- Footer font: Inter 400, 13px
-- Desktop padding: 96px; mobile: 32px (breakpoint at 768px)
+- Ink `#0A0E17` ground · Deep Ink `#121826` surfaces · Frost `#E9EDF3` wordmark, links · Mist `#C5CCD8` body · Slate `#8791A3` metadata · Steel `#9FB4D9` terrain
+- Coral `#FF5C39` is reserved for something genuinely live (a new entity, an announcement). Never decoration.
+- Wordmark: Bodoni Moda 700, caps, +0.035em, opsz 96, max 184px. Wordmark only.
+- Data layer: IBM Plex Mono caps, +0.14em, 11 to 13px. Motto +0.42em.
+- Headline/body (future pages): Host Grotesk 500/400.
+- One line per corner: BERSBO LABS / X + LinkedIn / coordinates / copyright.
+- Motion: one moving system (the terrain). Slow loops, ease-in-out, nothing snaps.
 
 ## Design Intent
 
-The site should feel quiet, permanent, editorial, and industrial — like a private industrial house. No marketing language, no CTAs, no links, no extra UI. Changes should preserve this restraint.
+Mysterious, large, withheld. Scale comes from what we don't say: no numbers, no claims, no logos, no CTAs. The only links are X and LinkedIn. Preserve this restraint.

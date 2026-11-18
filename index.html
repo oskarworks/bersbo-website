@@ -3,19 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bersbo</title>
+  <title>Bersbo Labs</title>
+  <meta name="description" content="Bersbo Labs. Sic parvis magna.">
+  <meta name="theme-color" content="#0A0E17">
+  <meta property="og:title" content="Bersbo Labs">
+  <meta property="og:description" content="Sic parvis magna.">
+  <meta property="og:url" content="https://bersbo.com">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0E17'/%3E%3Ctext x='16' y='24' text-anchor='middle' font-family='Didot,Bodoni 72,serif' font-weight='700' font-size='24' fill='%23E9EDF3'%3EB%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Cutive+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="terrain" aria-hidden="true">
+    <div class="plane" id="plane"></div>
+  </div>
+  <div class="scan" aria-hidden="true"></div>
+  <div class="fade" aria-hidden="true"></div>
+
+  <header class="corner-row top">
+    <span>BERSBO LABS</span>
+    <nav aria-label="Social">
+      <a href="https://x.com/bersbo_labs" rel="noopener" target="_blank">X ↗</a>
+      <a href="https://www.linkedin.com/company/bersbo" rel="noopener" target="_blank">LINKEDIN ↗</a>
+    </nav>
+  </header>
+
   <main>
-    <h1 class="hero">BERSBO</h1>
+    <h1 class="wordmark">BERSBO</h1>
+    <p class="motto">SIC PARVIS MAGNA</p>
   </main>
-  <footer>
-    <p>Bersbo Industries LLC &mdash; All rights reserved. &copy; <span id="year"></span></p>
+
+  <footer class="corner-row bottom">
+    <span>40.74° N &nbsp; 74.03° W</span>
+    <span>© <span id="year">2026</span> BERSBO LABS LLC</span>
   </footer>
+
   <script src="main.js"></script>
 </body>
 </html>

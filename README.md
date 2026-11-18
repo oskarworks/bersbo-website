@@ -1,2 +1,2 @@
-© Bersbo Industries LLC
+© Bersbo Labs LLC
 team@bersbo.com

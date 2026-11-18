@@ -20,6 +20,7 @@ No build, lint, or test commands. Plain HTML/CSS/JS.
 
 - `index.html`: the page. Loads Google Fonts (Bodoni Moda 700, IBM Plex Mono 400), `styles.css`, `main.js`
 - `styles.css`: all styling and design tokens as CSS variables; terrain, scan line and fade-in animations; reduced-motion fallback
+- `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`, `icon-512.png`: Bodoni B (optical size 6 so it holds at 16px)
 - `main.js`: sets the footer year and builds the dot terrain (54x22 desktop, 34x16 mobile)
 
 ## Brand (v2, "Ink")

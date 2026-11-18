@@ -85,7 +85,7 @@ a:focus-visible { outline: 1px solid var(--steel); outline-offset: 4px; }
   justify-content: space-between;
   align-items: center;
   letter-spacing: .14em;
-  z-index: 2;
+  z-index: 4;
 }
 .corner-row.top { top: 40px; font-size: 12px; }
 .corner-row.top nav { display: flex; gap: 32px; }

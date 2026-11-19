@@ -35,7 +35,7 @@ a:focus-visible { outline: 1px solid var(--steel); outline-offset: 4px; }
   position: fixed;
   left: 0; right: 0;
   bottom: -120px;
-  height: calc(48vh + 120px);
+  height: calc(43vh + 120px);
   perspective: 900px;
   perspective-origin: 50% 0%;
   pointer-events: none;
@@ -110,6 +110,8 @@ main {
   letter-spacing: .035em;
 }
 .motto {
+  text-align: center;
+  line-height: 2;
   font-size: 13px;
   letter-spacing: .42em;
   padding-left: .42em; /* optical centering for the trailing tracking */

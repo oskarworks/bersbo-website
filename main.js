@@ -22,3 +22,20 @@ document.getElementById('year').textContent = new Date().getFullYear();
   }
   plane.appendChild(frag);
 })();
+
+// Keep the terrain's horizon just below the motto on any screen height.
+(function () {
+  var terrain = document.querySelector('.terrain');
+  var motto = document.querySelector('.motto');
+  if (!terrain || !motto) return;
+  function fit() {
+    var gap = 84; // dots swell upward ~46px past the box edge
+    var top = motto.getBoundingClientRect().bottom + gap;
+    var h = terrain.getBoundingClientRect().bottom - top; // terrain's bottom edge is fixed by CSS
+    terrain.style.height = Math.max(200, h) + 'px';
+  }
+  fit();
+  window.addEventListener('resize', fit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  setTimeout(fit, 1000); // after the wordmark's rise-in animation settles
+})();

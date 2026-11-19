@@ -111,12 +111,13 @@ main {
 }
 .motto {
   text-align: center;
-  line-height: 2;
+  line-height: 1.75;
   font-size: 13px;
   letter-spacing: .42em;
   padding-left: .42em; /* optical centering for the trailing tracking */
   color: var(--slate);
 }
+.motto-name { font-weight: 500; color: var(--mist); }
 @keyframes rise {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
